@@ -1,10 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './CardComponent.module.scss';
 import { cardDefinitions, CardId } from './CardDefinitions';
 import { Resource } from '../Resource/Resource';
 import { ResourceIcon } from '../Resource/ResourceIcon';
 
 export const CardComponent: React.FC<{ cardId: CardId }> = ({ cardId }) => {
+    const { t } = useTranslation();
     const cardDefinition = cardDefinitions[cardId];
 
     let cardRequirementsAmount: number | null = null;
@@ -35,7 +37,7 @@ export const CardComponent: React.FC<{ cardId: CardId }> = ({ cardId }) => {
             </div>
             <div className={styles.resourceAmount}>{cardRequirementsAmount}</div>
             <div className={styles.cardNameWrapper}>
-                <h1 className={styles.cardName}>{cardDefinition.name}</h1>
+                <h1 className={styles.cardName}>{t(cardDefinition.nameKey)}</h1>
             </div>
             <div
                 className={styles.cardImage}
@@ -43,7 +45,7 @@ export const CardComponent: React.FC<{ cardId: CardId }> = ({ cardId }) => {
                     backgroundImage: `url("${cardDefinition.imageUrl}")`,
                 }}
             ></div>
-            <div className={styles.description}>{cardDefinition.description}</div>
+            <div className={styles.description}>{t(cardDefinition.descriptionKey)}</div>
         </div>
     );
 };
