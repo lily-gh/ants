@@ -18,7 +18,7 @@ export const LanguageSwitcher: React.FC = () => {
             >
                 {t('language.czech')}
             </button>
-            <span className={styles.separator}>|</span>
+            <span className={styles.separator}></span>
             <button
                 className={i18n.language === 'en' ? styles.active : ''}
                 onClick={() => changeLanguage('en')}

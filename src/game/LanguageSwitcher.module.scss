@@ -27,7 +27,7 @@
     }
 
     .separator {
-        color: #666;
-        user-select: none;
+        border-left: 1.5px solid #666;
+        height: 20px;
     }
 }
