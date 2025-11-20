@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './PlayerDashboardStats.module.scss';
 
 import castleIcon from '../../assets/images/dashboard-icons/castle.png';
@@ -12,6 +13,8 @@ interface Props {
 }
 
 export const PlayerDashboardCastleStats: React.FC<Props> = ({ castle, castleChange, wall, wallChange }) => {
+    const { t } = useTranslation();
+
     return (
         // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
         <div className={`${styles.playerStats} ${styles.resourceCastle}`}>
@@ -20,7 +23,7 @@ export const PlayerDashboardCastleStats: React.FC<Props> = ({ castle, castleChan
                     <div className={styles.icon}>
                         <img src={castleIcon} />
                     </div>
-                    <div className={styles.iconLabel}>Hrad</div>
+                    <div className={styles.iconLabel}>{t('resources.castle')}</div>
                 </div>
                 <div className={styles.valueWrapper}>
                     {castle}
@@ -32,7 +35,7 @@ export const PlayerDashboardCastleStats: React.FC<Props> = ({ castle, castleChan
                     <div className={styles.icon}>
                         <img src={wallIcon} />
                     </div>
-                    <div className={styles.iconLabel}>Hradba</div>
+                    <div className={styles.iconLabel}>{t('resources.wall')}</div>
                 </div>
                 <div className={styles.valueWrapper}>
                     {wall}

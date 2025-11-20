@@ -1,4 +1,8 @@
 {
+  "language": {
+    "czech": "Čeština",
+    "english": "English"
+  },
   "newGame": {
     "button": "Start new game"
   },
