@@ -3,6 +3,10 @@
     "czech": "Čeština",
     "english": "English"
   },
+  "players": {
+    "black": "Černí",
+    "red": "Červení"
+  },
   "newGame": {
     "button": "Začít novou hru"
   },
