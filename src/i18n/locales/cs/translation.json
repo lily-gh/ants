@@ -1,0 +1,158 @@
+{
+  "language": {
+    "czech": "Čeština",
+    "english": "English"
+  },
+  "players": {
+    "black": "Černí",
+    "red": "Červení"
+  },
+  "newGame": {
+    "button": "Začít novou hru"
+  },
+  "about": {
+    "developedBy": "Naprogramoval",
+    "developedByName": "Martin Hujer",
+    "year": "v roce 2023",
+    "sourceCode": "Zdrojové kódy jsou na",
+    "github": "githubu",
+    "originalGameIntro": "Princip hry, grafiku a zvuky jsem převzal z původní hry Mravenci, kterou vymyslel a naprogramoval",
+    "originalAuthor": "Ing. Miroslav Němeček",
+    "downloadInfo": "Originální hru pro Windows a případně i samostatnou grafiku a zvuky si",
+    "downloadLink": "můžete stáhnout ze stránek autora",
+    "downloadLocation": "(zhruba v polovině stránky) pod licencí",
+    "license": "použijte tu z toho co chcete a kde chcete"
+  },
+  "resources": {
+    "builders": "Stavitelé",
+    "bricks": "Cihly",
+    "soldiers": "Vojáci",
+    "weapons": "Zbraně",
+    "mages": "Mágové",
+    "crystals": "Krystaly",
+    "castle": "Hrad",
+    "wall": "Zeď"
+  },
+  "cards": {
+    "wall": {
+      "name": "Zeď",
+      "description": "Zeď +3"
+    },
+    "foundations": {
+      "name": "Základy",
+      "description": "Hrad +2"
+    },
+    "defense": {
+      "name": "Obrana",
+      "description": "Zeď +6"
+    },
+    "reserve": {
+      "name": "Rezervy",
+      "description": "Hrad +8, Zeď -4"
+    },
+    "tower": {
+      "name": "Věž",
+      "description": "Hrad +5"
+    },
+    "school": {
+      "name": "Škola",
+      "description": "Stavitelé +1"
+    },
+    "wain": {
+      "name": "Povoz",
+      "description": "Hrad +8, hrad soupeře -4"
+    },
+    "fence": {
+      "name": "Hradba",
+      "description": "Zeď +22"
+    },
+    "fort": {
+      "name": "Pevnost",
+      "description": "Hrad +20"
+    },
+    "babylon": {
+      "name": "Babylon",
+      "description": "Hrad +32"
+    },
+    "archer": {
+      "name": "Střelec",
+      "description": "Útok 2"
+    },
+    "knight": {
+      "name": "Rytíř",
+      "description": "Útok 3"
+    },
+    "rider": {
+      "name": "Jezdec",
+      "description": "Útok 4"
+    },
+    "platoon": {
+      "name": "Četa",
+      "description": "Útok 6"
+    },
+    "recruit": {
+      "name": "Nábor",
+      "description": "Vojáci +1"
+    },
+    "attack": {
+      "name": "Zteč",
+      "description": "Útok 12"
+    },
+    "saboteur": {
+      "name": "Sabotér",
+      "description": "Zásoby soupeře -4"
+    },
+    "thief": {
+      "name": "Zloděj",
+      "description": "Převod zásob soupeře 5"
+    },
+    "SWAT": {
+      "name": "SWAT",
+      "description": "Hrad soupeře -10"
+    },
+    "Banshee": {
+      "name": "Smrtka",
+      "description": "Útok 32"
+    },
+    "conjureBricks": {
+      "name": "Čaruj cihly",
+      "description": "Cihly +8"
+    },
+    "destroyBricks": {
+      "name": "Znič cihly",
+      "description": "Cihly soupeře -8"
+    },
+    "conjureWeapons": {
+      "name": "Čaruj zbraně",
+      "description": "Zbraně +8"
+    },
+    "destroyWeapons": {
+      "name": "Znič zbraně",
+      "description": "Zbraně soupeře -8"
+    },
+    "conjureCrystals": {
+      "name": "Čaruj krystaly",
+      "description": "Krystaly +8"
+    },
+    "destroyCrystals": {
+      "name": "Znič krystaly",
+      "description": "Krystaly soupeře -8"
+    },
+    "sorcerer": {
+      "name": "Čaroděj",
+      "description": "Mágové +1"
+    },
+    "dragon": {
+      "name": "Drak",
+      "description": "Útok 25"
+    },
+    "pixies": {
+      "name": "Skřítci",
+      "description": "Hrad +22"
+    },
+    "curse": {
+      "name": "Kletba",
+      "description": "Vše +1, vše soupeře -1"
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { PlayerDashboardStats } from './PlayerDashboardStats';
 import bricksIcon from '../../assets/images/dashboard-icons/bricks.png';
 import buildersIcon from '../../assets/images/dashboard-icons/builders.png';
@@ -38,38 +39,40 @@ export const PlayerDashboard: React.FC<Props> = ({
     wall,
     resourceChange,
 }) => {
+    const { t } = useTranslation();
+
     return (
         <div className={'playerDashboard'}>
             <PlayerBadge player={player} isOnTurn={isOnTurn} />
             <PlayerDashboardStats
                 resourceType={'bricks'}
-                creatorsLabel="Stavitelé"
+                creatorsLabel={t('resources.builders')}
                 creatorsIcon={buildersIcon}
                 creators={builders}
                 creatorsChange={resourceChange !== null ? resourceChange.builders : 0}
-                amountLabel="Cihly"
+                amountLabel={t('resources.bricks')}
                 amountIcon={bricksIcon}
                 amount={bricks}
                 amountChange={resourceChange !== null ? resourceChange.bricks : 0}
             />
             <PlayerDashboardStats
                 resourceType={'weapons'}
-                creatorsLabel="Vojáci"
+                creatorsLabel={t('resources.soldiers')}
                 creatorsIcon={soldiersIcon}
                 creators={soldiers}
                 creatorsChange={resourceChange !== null ? resourceChange.soldiers : 0}
-                amountLabel="Zbraně"
+                amountLabel={t('resources.weapons')}
                 amountIcon={weaponsIcon}
                 amount={weapons}
                 amountChange={resourceChange !== null ? resourceChange.weapons : 0}
             />
             <PlayerDashboardStats
                 resourceType={'crystals'}
-                creatorsLabel="Mágové"
+                creatorsLabel={t('resources.mages')}
                 creatorsIcon={magesIcon}
                 creators={mages}
                 creatorsChange={resourceChange !== null ? resourceChange.mages : 0}
-                amountLabel="Krystaly"
+                amountLabel={t('resources.crystals')}
                 amountIcon={crystalsIcon}
                 amount={crystals}
                 amountChange={resourceChange !== null ? resourceChange.crystals : 0}

@@ -1,0 +1,158 @@
+{
+  "language": {
+    "czech": "Čeština",
+    "english": "English"
+  },
+  "players": {
+    "black": "Blacks",
+    "red": "Reds"
+  },
+  "newGame": {
+    "button": "Start new game"
+  },
+  "about": {
+    "developedBy": "Developed by",
+    "developedByName": "Martin Hujer",
+    "year": "in 2023",
+    "sourceCode": "Source code is on",
+    "github": "GitHub",
+    "originalGameIntro": "The game concept, graphics, and sounds are taken from the original Ants game, which was designed and programmed by",
+    "originalAuthor": "Ing. Miroslav Němeček",
+    "downloadInfo": "The original Windows game and standalone graphics and sounds can be",
+    "downloadLink": "downloaded from the author's website",
+    "downloadLocation": "(approximately in the middle of the page) under the license",
+    "license": "use what you want, where you want"
+  },
+  "resources": {
+    "builders": "Builders",
+    "bricks": "Bricks",
+    "soldiers": "Soldiers",
+    "weapons": "Weapons",
+    "mages": "Mages",
+    "crystals": "Crystals",
+    "castle": "Castle",
+    "wall": "Wall"
+  },
+  "cards": {
+    "wall": {
+      "name": "Wall",
+      "description": "Wall +3"
+    },
+    "foundations": {
+      "name": "Foundations",
+      "description": "Castle +2"
+    },
+    "defense": {
+      "name": "Defense",
+      "description": "Wall +6"
+    },
+    "reserve": {
+      "name": "Reserve",
+      "description": "Castle +8, Wall -4"
+    },
+    "tower": {
+      "name": "Tower",
+      "description": "Castle +5"
+    },
+    "school": {
+      "name": "School",
+      "description": "Builders +1"
+    },
+    "wain": {
+      "name": "Wagon",
+      "description": "Castle +8, opponent's castle -4"
+    },
+    "fence": {
+      "name": "Fence",
+      "description": "Wall +22"
+    },
+    "fort": {
+      "name": "Fort",
+      "description": "Castle +20"
+    },
+    "babylon": {
+      "name": "Babylon",
+      "description": "Castle +32"
+    },
+    "archer": {
+      "name": "Archer",
+      "description": "Attack 2"
+    },
+    "knight": {
+      "name": "Knight",
+      "description": "Attack 3"
+    },
+    "rider": {
+      "name": "Rider",
+      "description": "Attack 4"
+    },
+    "platoon": {
+      "name": "Platoon",
+      "description": "Attack 6"
+    },
+    "recruit": {
+      "name": "Recruit",
+      "description": "Soldiers +1"
+    },
+    "attack": {
+      "name": "Attack",
+      "description": "Attack 12"
+    },
+    "saboteur": {
+      "name": "Saboteur",
+      "description": "Opponent's resources -4"
+    },
+    "thief": {
+      "name": "Thief",
+      "description": "Transfer opponent's resources 5"
+    },
+    "SWAT": {
+      "name": "SWAT",
+      "description": "Opponent's castle -10"
+    },
+    "Banshee": {
+      "name": "Banshee",
+      "description": "Attack 32"
+    },
+    "conjureBricks": {
+      "name": "Conjure Bricks",
+      "description": "Bricks +8"
+    },
+    "destroyBricks": {
+      "name": "Destroy Bricks",
+      "description": "Opponent's bricks -8"
+    },
+    "conjureWeapons": {
+      "name": "Conjure Weapons",
+      "description": "Weapons +8"
+    },
+    "destroyWeapons": {
+      "name": "Destroy Weapons",
+      "description": "Opponent's weapons -8"
+    },
+    "conjureCrystals": {
+      "name": "Conjure Crystals",
+      "description": "Crystals +8"
+    },
+    "destroyCrystals": {
+      "name": "Destroy Crystals",
+      "description": "Opponent's crystals -8"
+    },
+    "sorcerer": {
+      "name": "Sorcerer",
+      "description": "Mages +1"
+    },
+    "dragon": {
+      "name": "Dragon",
+      "description": "Attack 25"
+    },
+    "pixies": {
+      "name": "Pixies",
+      "description": "Castle +22"
+    },
+    "curse": {
+      "name": "Curse",
+      "description": "All +1, opponent's all -1"
+    }
+  }
+}

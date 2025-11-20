@@ -68,8 +68,8 @@ export type CardId = CardBuilding | CardFighting | CardMagic;
 
 export interface CardDefinition {
     id: CardId;
-    name: string;
-    description: string;
+    nameKey: string;
+    descriptionKey: string;
     imageUrl: string;
     sound: Sound;
     requiredResources: {
@@ -108,8 +108,8 @@ export const cardDefinitions: CardDefinitions = {
     // type "building"
     wall: {
         id: 'wall',
-        name: 'Zeď',
-        description: 'Zeď +3',
+        nameKey: 'cards.wall.name',
+        descriptionKey: 'cards.wall.description',
         imageUrl: wallImage,
         sound: 'buildWall',
         requiredResources: {
@@ -123,8 +123,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     foundations: {
         id: 'foundations', // original "base"
-        name: 'Základy',
-        description: 'Hrad +2',
+        nameKey: 'cards.foundations.name',
+        descriptionKey: 'cards.foundations.description',
         imageUrl: foundationsImage,
         sound: 'buildCastle',
         requiredResources: {
@@ -138,8 +138,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     defense: {
         id: 'defense',
-        name: 'Obrana',
-        description: 'Zeď +6',
+        nameKey: 'cards.defense.name',
+        descriptionKey: 'cards.defense.description',
         imageUrl: defenseImage,
         sound: 'buildWall',
         requiredResources: {
@@ -153,8 +153,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     reserve: {
         id: 'reserve',
-        name: 'Rezervy',
-        description: 'Hrad +8, Zeď -4',
+        nameKey: 'cards.reserve.name',
+        descriptionKey: 'cards.reserve.description',
         imageUrl: reserveImage,
         sound: 'buildCastle',
         requiredResources: {
@@ -169,8 +169,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     tower: {
         id: 'tower',
-        name: 'Věž',
-        description: 'Hrad +5',
+        nameKey: 'cards.tower.name',
+        descriptionKey: 'cards.tower.description',
         imageUrl: towerImage,
         sound: 'buildCastle',
         requiredResources: {
@@ -184,8 +184,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     school: {
         id: 'school',
-        name: 'Škola',
-        description: 'Stavitelé +1',
+        nameKey: 'cards.school.name',
+        descriptionKey: 'cards.school.description',
         imageUrl: schoolImage,
         sound: 'boostPower',
         requiredResources: {
@@ -199,8 +199,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     wain: {
         id: 'wain',
-        name: 'Povoz',
-        description: 'Hrad +8, hrad soupeře -4',
+        nameKey: 'cards.wain.name',
+        descriptionKey: 'cards.wain.description',
         imageUrl: wainImage,
         sound: 'buildCastle',
         requiredResources: {
@@ -217,8 +217,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     fence: {
         id: 'fence',
-        name: 'Hradba',
-        description: 'Zeď +22',
+        nameKey: 'cards.fence.name',
+        descriptionKey: 'cards.fence.description',
         imageUrl: fenceImage,
         sound: 'buildWall',
         requiredResources: {
@@ -232,8 +232,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     fort: {
         id: 'fort',
-        name: 'Pevnost',
-        description: 'Hrad +20',
+        nameKey: 'cards.fort.name',
+        descriptionKey: 'cards.fort.description',
         imageUrl: fortImage,
         sound: 'buildCastle',
         requiredResources: {
@@ -247,8 +247,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     babylon: {
         id: 'babylon',
-        name: 'Babylon',
-        description: 'Hrad +32',
+        nameKey: 'cards.babylon.name',
+        descriptionKey: 'cards.babylon.description',
         imageUrl: babylonImage,
         sound: 'buildCastle',
         requiredResources: {
@@ -263,8 +263,8 @@ export const cardDefinitions: CardDefinitions = {
     // type "army"
     archer: {
         id: 'archer',
-        name: 'Střelec',
-        description: 'Útok 2',
+        nameKey: 'cards.archer.name',
+        descriptionKey: 'cards.archer.description',
         imageUrl: archerImage,
         sound: 'destroyWall',
         requiredResources: {
@@ -278,8 +278,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     knight: {
         id: 'knight',
-        name: 'Rytíř',
-        description: 'Útok 3',
+        nameKey: 'cards.knight.name',
+        descriptionKey: 'cards.knight.description',
         imageUrl: knightImage,
         sound: 'destroyWall',
         requiredResources: {
@@ -293,8 +293,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     rider: {
         id: 'rider',
-        name: 'Jezdec',
-        description: 'Útok 4',
+        nameKey: 'cards.rider.name',
+        descriptionKey: 'cards.rider.description',
         imageUrl: riderImage,
         sound: 'destroyWall',
         requiredResources: {
@@ -308,8 +308,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     platoon: {
         id: 'platoon',
-        name: 'Četa',
-        description: 'Útok 6',
+        nameKey: 'cards.platoon.name',
+        descriptionKey: 'cards.platoon.description',
         imageUrl: platoonImage,
         sound: 'destroyWall',
         requiredResources: {
@@ -323,8 +323,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     recruit: {
         id: 'recruit',
-        name: 'Nábor',
-        description: 'Vojáci +1',
+        nameKey: 'cards.recruit.name',
+        descriptionKey: 'cards.recruit.description',
         imageUrl: recruitImage,
         sound: 'boostPower',
         requiredResources: {
@@ -338,8 +338,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     attack: {
         id: 'attack',
-        name: 'Zteč',
-        description: 'Útok 12',
+        nameKey: 'cards.attack.name',
+        descriptionKey: 'cards.attack.description',
         imageUrl: attackImage,
         sound: 'destroyWall',
         requiredResources: {
@@ -353,8 +353,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     saboteur: {
         id: 'saboteur',
-        name: 'Sabotér',
-        description: 'Zásoby soupeře -4',
+        nameKey: 'cards.saboteur.name',
+        descriptionKey: 'cards.saboteur.description',
         imageUrl: saboteurImage,
         sound: 'destroyStock',
         requiredResources: {
@@ -370,8 +370,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     thief: {
         id: 'thief',
-        name: 'Zloděj',
-        description: 'Převod zásob soupeře 5',
+        nameKey: 'cards.thief.name',
+        descriptionKey: 'cards.thief.description',
         imageUrl: thiefImage,
         sound: 'increaseStock',
         requiredResources: {
@@ -392,8 +392,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     SWAT: {
         id: 'SWAT',
-        name: 'SWAT',
-        description: 'Hrad soupeře -10',
+        nameKey: 'cards.SWAT.name',
+        descriptionKey: 'cards.SWAT.description',
         imageUrl: SWATImage,
         sound: 'destroyCastle',
         requiredResources: {
@@ -407,8 +407,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     Banshee: {
         id: 'Banshee',
-        name: 'Smrtka',
-        description: 'Útok 32',
+        nameKey: 'cards.Banshee.name',
+        descriptionKey: 'cards.Banshee.description',
         imageUrl: BansheeImage,
         sound: 'destroyWall',
         requiredResources: {
@@ -423,8 +423,8 @@ export const cardDefinitions: CardDefinitions = {
     // type "magic"
     conjureBricks: {
         id: 'conjureBricks',
-        name: 'Čaruj cihly',
-        description: 'Cihly +8',
+        nameKey: 'cards.conjureBricks.name',
+        descriptionKey: 'cards.conjureBricks.description',
         imageUrl: conjureBricksImage,
         sound: 'increaseStock',
         requiredResources: {
@@ -438,8 +438,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     destroyBricks: {
         id: 'destroyBricks', // original "crush bricks"
-        name: 'Znič cihly',
-        description: 'Cihly soupeře -8',
+        nameKey: 'cards.destroyBricks.name',
+        descriptionKey: 'cards.destroyBricks.description',
         imageUrl: destroyBricksImage,
         sound: 'destroyStock',
         requiredResources: {
@@ -453,8 +453,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     conjureWeapons: {
         id: 'conjureWeapons',
-        name: 'Čaruj zbraně',
-        description: 'Zbraně +8',
+        nameKey: 'cards.conjureWeapons.name',
+        descriptionKey: 'cards.conjureWeapons.description',
         imageUrl: conjureWeaponsImage,
         sound: 'increaseStock',
         requiredResources: {
@@ -468,8 +468,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     destroyWeapons: {
         id: 'destroyWeapons', // original "crush weapons"
-        name: 'Znič zbraně',
-        description: 'Zbraně soupeře -8',
+        nameKey: 'cards.destroyWeapons.name',
+        descriptionKey: 'cards.destroyWeapons.description',
         imageUrl: destroyWeaponsImage,
         sound: 'destroyStock',
         requiredResources: {
@@ -483,8 +483,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     conjureCrystals: {
         id: 'conjureCrystals',
-        name: 'Čaruj krystaly',
-        description: 'Krystaly +8',
+        nameKey: 'cards.conjureCrystals.name',
+        descriptionKey: 'cards.conjureCrystals.description',
         imageUrl: conjureCrystalsImage,
         sound: 'increaseStock',
         requiredResources: {
@@ -498,8 +498,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     destroyCrystals: {
         id: 'destroyCrystals', // original "crush crystals"
-        name: 'Znič krystaly',
-        description: 'Krystaly soupeře -8',
+        nameKey: 'cards.destroyCrystals.name',
+        descriptionKey: 'cards.destroyCrystals.description',
         imageUrl: destroyCrystalsImage,
         sound: 'destroyStock',
         requiredResources: {
@@ -513,8 +513,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     sorcerer: {
         id: 'sorcerer',
-        name: 'Čaroděj',
-        description: 'Mágové +1',
+        nameKey: 'cards.sorcerer.name',
+        descriptionKey: 'cards.sorcerer.description',
         imageUrl: sorcererImage,
         sound: 'boostPower',
         requiredResources: {
@@ -528,8 +528,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     dragon: {
         id: 'dragon',
-        name: 'Drak',
-        description: 'Útok 25',
+        nameKey: 'cards.dragon.name',
+        descriptionKey: 'cards.dragon.description',
         imageUrl: dragonImage,
         sound: 'destroyWall',
         requiredResources: {
@@ -543,8 +543,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     pixies: {
         id: 'pixies',
-        name: 'Skřítci',
-        description: 'Hrad +22',
+        nameKey: 'cards.pixies.name',
+        descriptionKey: 'cards.pixies.description',
         imageUrl: pixiesImage,
         sound: 'buildCastle',
         requiredResources: {
@@ -558,8 +558,8 @@ export const cardDefinitions: CardDefinitions = {
     },
     curse: {
         id: 'curse',
-        name: 'Kletba',
-        description: 'Vše +1, vše soupeře -1',
+        nameKey: 'cards.curse.name',
+        descriptionKey: 'cards.curse.description',
         imageUrl: curseImage,
         sound: 'curse',
         requiredResources: {

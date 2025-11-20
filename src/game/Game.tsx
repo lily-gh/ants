@@ -10,6 +10,7 @@ import { CardsInHand } from './CardsInHand';
 import { playSound } from '../sounds/Sounds';
 import { NewGameButton } from './NewGameButton';
 import { About } from './About';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export const Game: React.FC = () => {
     const discardDeckRef = useRef<HTMLDivElement>(null);
@@ -114,7 +115,10 @@ export const Game: React.FC = () => {
                     />
                 </div>
             </div>
-            <About />
+            <div className={styles.footerWrapper}>
+                <LanguageSwitcher />
+                <About />
+            </div>
         </div>
     );
 };

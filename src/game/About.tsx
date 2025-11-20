@@ -1,19 +1,23 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './About.module.scss';
 
 export const About: React.FC = () => {
+    const { t } = useTranslation();
+
     return (
         <footer className={styles.footer}>
             <p>
-                Naprogramoval <a href="https://www.martinhujer.cz/">Martin Hujer</a> v roce 2023. Zdrojové kódy jsou na{' '}
-                <a href="https://github.com/mhujer/ants">githubu</a>.
+                {t('about.developedBy')} <a href="https://www.martinhujer.cz/">{t('about.developedByName')}</a>{' '}
+                {t('about.year')}. {t('about.sourceCode')}{' '}
+                <a href="https://github.com/mhujer/ants">{t('about.github')}</a>.
             </p>
             <p>
-                Princip hry, grafiku a zvuky jsem převzal z původní hry Mravenci, kterou vymyslel a naprogramoval{' '}
-                <a href="https://www.breatharian.eu/Panda38/index.html">Ing. Miroslav Němeček</a>.<br /> Originální hru
-                pro Windows a případně i samostatnou grafiku a zvuky si{' '}
-                <a href="https://www.breatharian.eu/sw/index.html">můžete stáhnout ze stránek autora</a> (zhruba v
-                polovině stránky) pod licencí <em>&quot;použijte tu z toho co chcete a kde chcete&quot;</em>.
+                {t('about.originalGameIntro')}{' '}
+                <a href="https://www.breatharian.eu/Panda38/index.html">{t('about.originalAuthor')}</a>.<br />{' '}
+                {t('about.downloadInfo')}{' '}
+                <a href="https://www.breatharian.eu/sw/index.html">{t('about.downloadLink')}</a>{' '}
+                {t('about.downloadLocation')} <em>&quot;{t('about.license')}&quot;</em>.
             </p>
         </footer>
     );
